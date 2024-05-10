@@ -1,11 +1,11 @@
-import Theme from "./Theme";
+import Giftcard from "./Giftcard";
 
 
 function App() {
 
   return (
     <div className="App">
-      <Theme />
+      <Giftcard />
     </div>
   );
 }
