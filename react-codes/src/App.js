@@ -1,10 +1,11 @@
-import LearnCustomHooks from "./CustomHooks/usePrevious";
+import MousePosRender from "./RenderMousePos";
+
 
 function App() {
 
   return (
     <div className="App">
-      <LearnCustomHooks />
+      <MousePosRender />
     </div>
   );
 }
