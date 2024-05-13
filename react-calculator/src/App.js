@@ -1,10 +1,10 @@
-import FetchLearn from "./FetchLearn";
+import LearnCustomHooks from "./CustomHooks/usePrevious";
 
 function App() {
 
   return (
     <div className="App">
-      <FetchLearn />
+      <LearnCustomHooks />
     </div>
   );
 }
