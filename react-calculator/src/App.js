@@ -1,11 +1,10 @@
-import Giftcard from "./Giftcard";
-
+import FetchLearn from "./FetchLearn";
 
 function App() {
 
   return (
     <div className="App">
-      <Giftcard />
+      <FetchLearn />
     </div>
   );
 }
