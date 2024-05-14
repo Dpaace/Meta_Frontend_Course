@@ -1,11 +1,14 @@
-import RadioButton from "./ManupulateChildren";
+
+import MousePosRender from "./RenderMousePos";
 
 
 function App() {
 
   return (
     <div className="App">
-      <RadioButton />
+
+      <MousePosRender />
+
     </div>
   );
 }
