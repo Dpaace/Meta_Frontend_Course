@@ -1,14 +1,14 @@
-
-import MousePosRender from "./RenderMousePos";
+import FeedbackForm from "./FeedbackForm";
 
 
 function App() {
+  const handleSubmit = () => {
+    console.log("Form submitted!");
+  };
 
   return (
     <div className="App">
-
-      <MousePosRender />
-
+      <FeedbackForm onSubmit={handleSubmit} />
     </div>
   );
 }
