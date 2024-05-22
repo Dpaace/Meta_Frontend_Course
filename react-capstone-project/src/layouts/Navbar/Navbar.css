@@ -1,0 +1,53 @@
+.navbar {
+    @apply justify-between bg-white p-4 flex h-16 max-w-[65rem] m-0
+}
+
+.logo {
+    @apply h-12
+}
+
+nav {
+    @apply flex
+}
+
+ul {
+    @apply flex
+}
+
+li {
+    @apply list-none
+}
+
+ul li {
+    @apply ml-4 text-inherit
+}
+
+ul li a {
+    @apply ml-4 text-black text-sm
+}
+
+.menu-toggle {
+    @apply hidden
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        @apply w-full fixed mb-24
+    }
+
+    .menu-toggle {
+        @apply block cursor-pointer
+    }
+
+    .menu-list {
+        @apply fixed top-16 left-0 w-full bg-white p-4 hidden
+    }
+
+    .nav.open .menu-list {
+        @apply flex flex-col
+    }
+
+    ul li a {
+        @apply ml-4 text-gray-400 text-[1.1em]
+    }
+}
