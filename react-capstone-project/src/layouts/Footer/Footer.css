@@ -11,13 +11,12 @@
     @apply h-[170px] object-contain
 }
 
-
 .footer-title {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    margin: 0 0 1rem 0;
+    @apply text-white text-xl font-semibold !mb-4 m-0
+}
+
+.footer-site-map {
+    @apply self-start 
 }
 
 .footer-site-map {
