@@ -16,12 +16,8 @@
 }
 
 .footer-site-map {
-    @apply self-start 
-}
-
-.footer-site-map {
     grid-area: sitemap;
-    align-self: start;
+    @apply self-start 
 }
 
 .footer-contact {
@@ -33,63 +29,33 @@
 }
 
 .footer-item {
-    margin: 0.5rem 0;
-    text-decoration: none;
-    color: white;
-    display: flex;
+    @apply m-2 text-white flex
 }
 
-.footer-item:hover {
-    animation-name: colorChange;
-    animation-duration: 1s;
-}
-
-@keyframes colorChange {
-    0% {
-        color: white;
-    }
-
-    100% {
-        color: #f4ce14;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .footer {
-        background: #495e57;
-        height: 100%;
-        width: 100%;
+        @apply h-full w-full bg-green-950
     }
 
     .footer-container {
-        display: grid;
-        padding: 2rem 0rem;
-        margin: 0 auto;
         grid-template-columns: 40fr 60fr;
-        height: 100%;
-        width: 100%;
         grid-template-areas: "icon sitemap";
         grid-column-gap: 0.25rem;
+        @apply grid p-8 m-0 h-full w-full
     }
 
     .footer-logo {
-        height: 170px;
-        object-fit: contain;
-        align-self: center;
-        justify-self: center;
+        @apply h-[170px] object-contain self-center justify-center
     }
 
     .footer-title {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        margin: 0 0 1rem 0;
+        @apply text-white text-xl font-bold mb-4 m-0
     }
 
     .footer-site-map {
         grid-area: sitemap;
-        align-self: start;
+        @apply self-start
     }
 
     .footer-contact {
@@ -103,24 +69,6 @@
     }
 
     .footer-item {
-        margin: 0.5rem 0;
-        text-decoration: none;
-        color: white;
-        display: flex;
-    }
-
-    .footer-item:hover {
-        animation-name: colorChange;
-        animation-duration: 1s;
-    }
-
-    @keyframes colorChange {
-        0% {
-            color: white;
-        }
-
-        100% {
-            color: #f4ce14;
-        }
+        @apply m-0 text-white flex
     }
 }
