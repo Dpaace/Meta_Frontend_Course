@@ -1,0 +1,63 @@
+.about {
+    grid-column-gap: 2rem;
+    grid-template: "about image";
+    grid-template-columns: 60fr 40fr;
+    @apply h-full py-20 px-0 grid items-center max-w-5xl my-0 mx-auto
+}
+
+.about-title {
+    font-family: "Markazi Text";
+    @apply font-medium text-6xl
+}
+
+.about-subtitle {
+    font-family: "Markazi Text";
+    @apply text-5xl text-gray-600
+}
+
+.about-description {
+    @apply text-black pr-24
+}
+
+.about-image-1 {
+    grid-area: image;
+    @apply mt-20 mr-20 w-full h-80 justify-self-end rounded-2xl object-cover
+}
+
+.about-image-2 {
+    grid-area: image;
+    @apply w-full h-80 justify-self-end rounded-2xl object-cover
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        grid-column-gap: 2rem;
+        grid-template: "about ""image";
+        grid-template-rows: 1fr 0.75fr;
+        @apply h-full p-4 grid items-center my-0 mx-auto
+    }
+
+    .about-title {
+        font-family: "Markazi Text";
+        @apply font-medium text-4xl my-2
+    }
+
+    .about-subtitle {
+        font-family: "Markazi Text";
+        @apply text-3xl text-gray-600 my-1
+    }
+
+    .about-description {
+        @apply text-black pr-2
+    }
+
+    .about-image-1 {
+        grid-area: image;
+        @apply hidden
+    }
+
+    .about-image-2 {
+        grid-area: image;
+        @apply w-full h-40 justify-self-end rounded-2xl object-cover p-0
+    }
+}
