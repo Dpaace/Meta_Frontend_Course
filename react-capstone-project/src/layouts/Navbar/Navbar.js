@@ -29,24 +29,26 @@ const Navbar = () => {
 
     return (
         <header className='navbar'>
-            <div className='logo'>
-                <img src={Logo} alt='logo' height={50} />
-            </div>
-            <nav className={`nav ${isMenuOpen? "open" : ""}`}>
-                <ul className={`menu-list ${isMenuOpen} ? "open" : ""`}>
-                    {
-                        menuItems.map(item => (
-                            <li key={item.id}>
-                                <a href={item.link} className='link'>
-                                    {item.label}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </nav>
-            <div className='menu-toggle' onClick={toggleMenu}>
-                <img src={MenuIcon} alt='Menu-Icon' />
+            <div className='nav-container'>
+                <div className='logo'>
+                    <img src={Logo} alt='logo' height={50} />
+                </div>
+                <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
+                    <ul className={`menu-list ${isMenuOpen} ? "open" : ""`}>
+                        {
+                            menuItems.map(item => (
+                                <li key={item.id}>
+                                    <a href={item.link} className='link'>
+                                        {item.label}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
+                <div className='menu-toggle' onClick={toggleMenu}>
+                    <img src={MenuIcon} alt='Menu-Icon' />
+                </div>
             </div>
         </header>
     )

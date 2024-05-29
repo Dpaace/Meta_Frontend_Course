@@ -1,5 +1,9 @@
 .navbar {
-    @apply justify-between bg-white p-4 flex h-16 max-w-[65rem] m-0
+    @apply h-full w-full bg-white
+}
+
+.nav-container {
+    @apply flex p-2 pt-4 justify-between max-w-5xl mx-auto
 }
 
 .logo {
@@ -19,11 +23,11 @@ li {
 }
 
 ul li {
-    @apply ml-4 text-inherit
+    @apply ml-4 text-inherit pt-1
 }
 
 ul li a {
-    @apply ml-4 text-black text-sm
+    @apply ml-4 text-black text-xl
 }
 
 .menu-toggle {
@@ -32,7 +36,7 @@ ul li a {
 
 @media screen and (max-width: 767px) {
     .navbar {
-        @apply w-full fixed mb-24
+        @apply w-full h-20 fixed mb-24
     }
 
     .menu-toggle {

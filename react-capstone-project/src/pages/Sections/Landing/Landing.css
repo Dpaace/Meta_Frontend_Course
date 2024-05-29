@@ -1,0 +1,57 @@
+.landing-background {
+    @apply bg-gray-600 h-full flex
+}
+
+.landing {
+    grid-column-gap: 2rem;
+    grid-template: "info image";
+    grid-template-columns: 60fr 40fr;
+    @apply h-full py-8 px-0 grid items-center max-w-5xl mx-auto my-0
+}
+
+.title {
+    @apply text-yellow-500 text-6xl leading-3
+}
+
+.subtitle {
+    @apply text-white text-4xl mt-6
+}
+
+
+p {
+    @apply text-white
+}
+
+.image {
+    grid-area: image;
+    @apply w-full h-80 justify-self-end rounded-2xl object-cover
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .landing-background {
+        @apply bg-gray-600 h-full flex
+    }
+
+    .landing {
+        grid-column-gap: 2rem;
+        grid-template: "info ""image";
+        grid-template-columns: 1fr;
+        @apply h-full px-8 py-4 grid items-center max-w-5xl mx-0 my-auto mt-24
+    }
+
+    .title {
+        @apply text-4xl leading-[0.5rem]
+    }
+
+    .subtitle {
+        @apply text-2xl
+    }
+
+    .image {
+        grid-area: image;
+        @apply w-full h-96 justify-self-center object-fill mt-4
+    }
+
+}
