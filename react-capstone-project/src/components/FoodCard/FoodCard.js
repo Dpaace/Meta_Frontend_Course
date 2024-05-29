@@ -6,7 +6,7 @@ const FoodCard = ({ title, description, image, price }) => {
     return (
         <div className="food-card">
             <div className="card-image">
-                <img src={image} alt="food pic" height={200} />
+                <img src={image} alt="food" height={200} />
             </div>
             <div className="card-body">
                 <div className="card-header">
