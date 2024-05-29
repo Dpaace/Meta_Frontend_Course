@@ -1,0 +1,11 @@
+.button {
+    @apply bg-yellow-500 px-2 py-4 rounded-lg text-gray-700 font-bold border-solid text-[1em]
+}
+
+.button:hover {
+    @apply bg-yellow-600 text-white
+}
+
+.button:active {
+    @apply bg-gray-700 text-white
+}

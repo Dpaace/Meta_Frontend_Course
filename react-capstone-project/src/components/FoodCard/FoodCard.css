@@ -1,0 +1,45 @@
+.food-card {
+    @apply bg-gray-200 rounded-2xl h-full min-h-[27-rem] w-72 overflow-hidden flex flex-col
+}
+
+.card-image {
+    @apply w-full
+}
+
+.card-title {
+    @apply text-2xl font-semibold m-0 text-gray-700
+}
+
+.card-description {
+    @apply text-base font-normal m-0 text-gray-700
+}
+
+.card-price {
+    @apply text-xl font-semibold m-0 text-orange-500
+}
+
+.card-body {
+    @apply p-6 flex flex-col flex-grow
+}
+
+.card-header {
+    @apply flex-grow
+}
+
+.header-title {
+    @apply flex justify-between items-baseline mb-4
+}
+
+.card-delivery {
+    @apply flex justify-start content-end mt-4
+}
+
+.delivery-title {
+    @apply text-base font-semibold text-black mr-2
+}
+
+@media screen and (max-width: 767px) {
+    .food-card {
+        @apply  bg-gray-200 rounded-2xl h-full w-72 overflow-hidden flex flex-col mb-4
+    }
+}
