@@ -32,7 +32,7 @@
 @media screen and (max-width: 767px) {
     .about {
         grid-column-gap: 2rem;
-        grid-template: "about ""image";
+        grid-template: "about""image";
         grid-template-rows: 1fr 0.75fr;
         @apply h-full p-4 grid items-center my-0 mx-auto
     }
