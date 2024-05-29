@@ -1,0 +1,39 @@
+.testimonial-card {
+    @apply bg-white rounded-2xl h-full min-h-40 w-72 overflow-hidden flex flex-col p-4
+}
+
+.testimonial-rating {
+    @apply flex
+}
+
+.testimonial-description {
+    @apply flex-grow flex flex-col justify-between text-sm text-gray-500
+}
+
+.testimonial-card-author {
+    @apply text-black ml-4 font-bold
+}
+
+.testimonial-card-container {
+    @apply flex py-4 px-0
+}
+
+.testimonial-profile-picture {
+    @apply rounded-md w-12 object-cover
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial-card {
+
+        /* background: white;
+        border-radius: 16px;
+        height: 100%;
+        min-height: 10rem;
+        width: 18rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 1rem; */
+    }
+}

@@ -1,0 +1,26 @@
+.testimonial-background {
+    @apply bg-gray-600
+}
+
+.testimonials {
+    @apply h-full py-8 px-0 max-w-5xl my-0 mx-auto
+}
+
+.testimonials-container {
+    grid-template-columns: 85fr 15fr;
+    @apply flex items-center justify-center mb-8
+}
+
+.testimonials-list {
+    @apply flex flex-row justify-between
+}
+
+.testimonial-title {
+    @apply text-white text-2xl
+}
+
+@media screen and (max-width: 767px) {
+    .testimonials-list {
+        @apply flex flex-col justify-between items-center
+    }
+}

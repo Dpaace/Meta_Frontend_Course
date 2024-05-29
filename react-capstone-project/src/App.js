@@ -9,7 +9,7 @@ function App() {
     <div data-testid="app-component">
       <Router>
         <Layout>
-        <Routes>
+          <Routes>
             <Route path={pages.get("home").path} element={<Home />} />
           </Routes>
         </Layout>
