@@ -29,7 +29,7 @@
 }
 
 .footer-item {
-    @apply m-2 text-white flex
+    @apply my-2 text-white flex
 }
 
 

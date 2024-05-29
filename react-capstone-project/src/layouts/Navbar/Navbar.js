@@ -1,12 +1,12 @@
 import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import Logo from '../../assets/Logo.svg';
 import MenuIcon from "../../assets/hamburger.svg";
+import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
@@ -14,24 +14,24 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     }
 
-    // const onClickImage = () => {
-    //     navigate('/')
-    // }
+    const onClickImage = () => {
+        navigate('/')
+    }
 
     const menuItems = [
         { id: 1, label: "Home", link: "/" },
-        { id: 2, label: "About", link: "/about" },
-        { id: 3, label: "Menu", link: "/menu" },
+        { id: 2, label: "About", },
+        { id: 3, label: "Menu", },
         { id: 4, label: "Reservations", link: "/reservations" },
-        { id: 5, label: "Order Online", link: "/orders" },
-        { id: 6, label: "Login", link: "/login" }
+        { id: 5, label: "Order Online", },
+        { id: 6, label: "Login", }
     ];
 
     return (
         <header className='navbar'>
             <div className='nav-container'>
                 <div className='logo'>
-                    <img src={Logo} alt='logo' height={50} />
+                    <img src={Logo} alt='logo' height={50} onClick={onClickImage} />
                 </div>
                 <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
                     <ul className={`menu-list ${isMenuOpen} ? "open" : ""`}>

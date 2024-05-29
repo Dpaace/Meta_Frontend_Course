@@ -1,0 +1,27 @@
+.reservation-container {
+    @apply flex justify-between items-center p-4
+}
+
+.containter-item-title {
+    @apply text-white text-xl text-center
+}
+
+.reservation-button {
+    @apply flex items-center justify-center w-full
+}
+
+input,
+select {
+    transition: border-color 0.3s;
+    @apply h-10 pe-4 ps-4 outline-none border border-gray-600 rounded-md bg-white text-gray-600 cursor-pointer
+
+}
+
+input:focus,
+select:focus {
+    @apply border-2 border-gray-500
+}
+
+.error {
+    border: 1px solid red !important;
+}

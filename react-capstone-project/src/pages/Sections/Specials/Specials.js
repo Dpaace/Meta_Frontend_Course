@@ -1,8 +1,6 @@
 import React from "react";
 import "./Specials.css";
 import Button from "../../../components/Button/Button";
-import { useNavigate } from "react-router-dom";
-import pages from "../../../utils/pages";
 import FoodCard from "../../../components/FoodCard/FoodCard";
 
 const specials = [
@@ -30,17 +28,12 @@ const specials = [
 ];
 
 const Specials = () => {
-    const navigate = useNavigate();
-
-    const onClickMenu = () => {
-        navigate(pages.get("orders").path);
-    };
     return (
         <div className="specials-background">
             <div className="specials">
                 <div className="specials-container">
                     <h1 className="specials-title">Specials</h1>
-                    <Button title={"Online Menu"} onClick={onClickMenu} />
+                    <Button title={"Online Menu"} />
                 </div>
 
                 <div className="specials-list">
@@ -57,7 +50,7 @@ const Specials = () => {
                     }
                 </div>
             </div>
-         </div>
+        </div>
 
     )
 }

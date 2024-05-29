@@ -8,16 +8,17 @@ const Footer = () => {
       <div className="footer-container">
         <img className="footer-logo" src={Logo} alt="logo-footer"></img>
         <div className="footer-site-map">
-          <p className="footer-title"> SITEMAP</p>
-          <p className="footer-item"> 123 Citrus Lane</p>
-          <p className="footer-item"> 123-456-7890</p>
-          <p className="footer-item"> little.lemon@lemon.com</p>
+          <p className="footer-title">PAGES</p>
+          <p className="footer-item"> Home</p>
+          <p className="footer-item"> About</p>
+          <p className="footer-item"> Contact</p>
+          <p className="footer-item"> little.lemon@mail.com</p>
         </div>
         <div className="footer-contact">
           <p className="footer-title"> CONTACT</p>
-          <p className="footer-item"> 123 Citrus Lane</p>
+          <p className="footer-item"> 123 Lemon Lane</p>
           <p className="footer-item"> 123-456-7890</p>
-          <p className="footer-item"> little.lemon@lemon.com</p>
+          <p className="footer-item"> little.lemon@mail.com</p>
         </div>
         <div className="footer-social">
           <p className="footer-title"> SOCIAL MEDIA LINKS</p>

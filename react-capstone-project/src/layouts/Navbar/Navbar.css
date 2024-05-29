@@ -26,6 +26,10 @@ ul li {
     @apply ml-4 text-inherit pt-1
 }
 
+ul li a:hover {
+    @apply bg-yellow-500 text-white rounded-sm
+}
+
 ul li a {
     @apply ml-4 text-black text-xl
 }

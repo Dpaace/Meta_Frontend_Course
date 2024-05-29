@@ -1,0 +1,21 @@
+.reservation {
+  @apply h-custom-height-lg w-screen max-w-5xl my-0 mx-auto flex justify-center items-center
+}
+
+.reservation-card {
+  @apply bg-green-950 rounded-2xl p-8 w-1/2
+}
+
+.reservation-title {
+  @apply text-4xl font-semibold mb-8 bg-gray-600 text-white mt-0 flex justify-center
+}
+
+@media screen and (max-width: 767px) {
+  .reservation {
+    @apply h-custom-height-sm
+  }
+
+  .reservation-card {
+    @apply w-4/5
+  }
+}

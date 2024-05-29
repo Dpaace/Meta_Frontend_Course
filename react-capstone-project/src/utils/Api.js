@@ -5,7 +5,7 @@ const seededRandom = (seed) => {
 
   return () => (s = (s * a) % m) / m;
 };
- 
+
 const fetchAPI = (date) => {
   let result = [];
   let random = seededRandom(date.getDate());
